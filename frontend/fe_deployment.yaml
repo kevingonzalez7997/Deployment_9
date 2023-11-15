@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp9-frontend-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dp9frontend
+  template:
+    metadata:
+      labels:
+        app: dp9frontend
+    spec:
+      containers:
+      - name: dp9frontend
+        image: djtoler/dp9frontend:latest
+        ports:
+        - name: http
+          containerPort: 3000
+
