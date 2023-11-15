@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp9-backend-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dp9backend
+  template:
+    metadata:
+      labels:
+        app: dp9backend
+    spec:
+      nodeSelector:
+        role: backend
+      containers:
+      - name: dp9backend
+        image: djtoler/dp9backend:latest
+        ports:
+        - containerPort: 8000
+
+
