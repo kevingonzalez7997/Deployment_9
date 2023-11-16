@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: ecom_f
+    app: ecom-f
   ports:
     - protocol: TCP
       port: 80
