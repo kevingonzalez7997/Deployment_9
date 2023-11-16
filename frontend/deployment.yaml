@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ecom_b
+  name: ecom-front
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ecom_b
+      app: ecom_f
   template:
     metadata:
       labels:
-        app: ecom_b
+        app: ecom_f
     spec:
       containers:
-        - name: ecom_b
-          image: kevingonzalez7997/d9_back_v1
+        - name: ecom_f
+          image: kevingonzalez7997/d9_front_v1
           ports:
             - name: http
-              containerPort: 8000
+              containerPort: 3000
