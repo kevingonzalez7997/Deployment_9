@@ -23,8 +23,8 @@ This setup aims to establish a resilient and scalable infrastructure for the e-c
 ## Infrastructure Diagram
 ![Infrastructure Diagram](Results/Deploy9.png)
 
-## Jenkins Infrastructure (EC2.tf)
-The infrastructure for Jenkins is defined in the [ec2.tf](jenkinsenv/ec2.tf) file. This infrastructure consists of three EC2 instances:
+## Jenkins Infrastructure (jenkins.tf)
+The infrastructure for Jenkins is defined in the [ec2.tf](jenkinsenv/jenkins.tf) file. This infrastructure consists of three EC2 instances:
 
 1. **Jenkins Manager**: This instance is responsible for managing and controlling the worker nodes.
 2. **Docker Node / Terraform**: This node is equipped for tasks such as testing the application, building the Docker image, and pushing the image to Docker Hub. Terraform then provisioned the application infrastructure 
