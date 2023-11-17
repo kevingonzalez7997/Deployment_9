@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ecom-b
-          image: kevingonzalez7997/d9_back_v1
+          image: kevingonzalez7997/d9_back_v2
           ports:
             - name: http
               containerPort: 8000

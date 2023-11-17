@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ecom-f
-          image: kevingonzalez7997/d9_front_v1
+          image: kevingonzalez7997/d9_front_v2
           ports:
             - name: http
               containerPort: 3000
