@@ -30,3 +30,26 @@ The infrastructure for Jenkins is defined in the [ec2.tf](jenkinsenv/ec2.tf) fil
 3. **EKS Node**: This Jenkins node handles the creation of the EKS cluster and the application's EKS worker nodes. The configuration is based on the deployment, service, and ingress YAML files.
 
 [Scripts](jenkinsenv/jenkins.sh) have been prepared to install the necessary files on each instance.
+
+## Credentials for Jenkins
+To ensure Terraform has the necessary access to AWS, it requires both AWS access and secret keys. Since the main.tf files are hosted on GitHub but shouldn't have public access for security reasons, Jenkins credentials are created for AWS. Similarly, credentials are created for Docker Hub with a username and password:
+
+For AWS:
+
+- Navigate to **Manage Jenkins > Credentials > System > Global credentials (unrestricted)**.
+- Create two credentials for access and secret keys as "Secret text."
+
+For Docker Hub:
+
+- Navigate to **Manage Jenkins > Credentials > System > Global credentials (unrestricted)**.
+- Create credentials for access and secret keys using DockerHub-generated key and username.
+
+## Application Infrastructure Resources
+
+## Jenkins Pipeline
+
+## Troubleshooting
+
+## Optimization
+
+## Conclusion
