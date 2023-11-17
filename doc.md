@@ -17,4 +17,4 @@ The infrastructure for Jenkins is defined in the [ec2.tf](jenkinsenv/ec2.tf) fil
 2. **Docker Node / Terraform**: This node is equipped for tasks such as testing the application, building the Docker image, and pushing the image to Docker Hub. Terraform then provisioned the application infrastructure 
 3. **EKS Node**: This Jenkins node handles the creation of the EKS cluster and the application's EKS worker nodes. The configuration is based on the deployment, service, and ingress YAML files.
 
-[Scripts](Jenkins_files) have been prepared to install the necessary files on each instance.
+[Scripts](jenkinsenv/jenkins.sh) have been prepared to install the necessary files on each instance.
