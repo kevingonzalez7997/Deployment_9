@@ -8,7 +8,7 @@ The primary goal of this deployment is to leverage Kubernetes to deploy a robust
 This setup aims to establish a resilient and scalable infrastructure for the e-commerce application, optimizing performance and scalability during traffic spikes, and addressing disaster recovery scenarios.
 
 ## Infrastructure Diagram
-![Infrastructure Diagram](D9v1.png)
+![Infrastructure Diagram](Results/Deploy9.png)
 
 ## Jenkins Infrastructure (EC2.tf)
 The infrastructure for Jenkins is defined in the [ec2.tf](jenkinsenv/ec2.tf) file. This infrastructure consists of three EC2 instances:
