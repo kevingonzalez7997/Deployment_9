@@ -9,6 +9,7 @@
 - [Credentials for Jenkins](#credentials-for-jenkins)
 - [Application Infrastructure Resources](#application-infrastructure-resources)
 - [Jenkins Pipeline](#jenkins-pipeline)
+- [Data](#data)
 - [Troubleshooting](#troubleshooting)
 - [Optimization](#optimization)
 - [Conclusion](#conclusion)
@@ -45,6 +46,8 @@ For Docker Hub:
 - Create credentials for access and secret keys using DockerHub-generated key and username.
 
 ## Application Infrastructure Resources
+
+## Data
 
 ## Jenkins Pipeline
 
