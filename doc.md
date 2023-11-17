@@ -1,5 +1,17 @@
 # Ecom application deployment on AWS network with EKS
-# November 18, 2023
+
+### November 18, 2023
+
+## Table of Contents
+- [Purpose](#purpose)
+- [Infrastructure Diagram](#infrastructure-diagram)
+- [Jenkins Infrastructure (ec2.tf)](#jenkins-infrastructure-ec2tf)
+- [Credentials for Jenkins](#credentials-for-jenkins)
+- [Application Infrastructure Resources](#application-infrastructure-resources)
+- [Jenkins Pipeline](#jenkins-pipeline)
+- [Troubleshooting](#troubleshooting)
+- [Optimization](#optimization)
+- [Conclusion](#conclusion)
 
 ## Purpose
 
