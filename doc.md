@@ -48,14 +48,14 @@ For Docker Hub:
 ## Application Infrastructure Resources
 
 ### vpc.tf
-The Jenkins node previously created will use Terraform to launch the application's infrastructures in the US East regions. The infrastructure includes the following resources in the [vpc.tf](initTerraform/vpc.tf) :
+The Jenkins node previously created will use Terraform to launch the application's infrastructures in the US East region. The infrastructure includes the following resources in the [vpc.tf](initTerraform/vpc.tf) :
 
 - **Virtual Private Cloud (VPC)**: The networking framework that manages resources.
 - **Availability Zones (2 AZs)**: Providing redundancy and fault tolerance by distributing resources across different AZs.
 - **2 Public Subnets**: Hosts the NAT gateway for egress traffic from the private subnet
 - **2 Private Subnets**: Subnets isolated from the public internet, for sensitive data
 - **NAT Gateway**: A network gateway for egress traffic from private subnets to the internet.
-- **2 Route Tables**: Routing rules for traffic between subnets , NAT, and IGW
+- **2 Route Tables**: Routing rules for traffic between subnets, NAT, and IGW
 ## Data
 
 ## Jenkins Pipeline
