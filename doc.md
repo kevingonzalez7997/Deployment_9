@@ -47,6 +47,16 @@ For Docker Hub:
 
 ## Application Infrastructure Resources
 
+### vpc.tf
+
+The [vpc.tf](initTerraform/vpc.tf) file is the infrastructure, creating a comprehensive network environment for the application. It includes the following components:
+
+- **Virtual Private Cloud (VPC)**: The networking framework that manages resources.
+- **Availability Zones (2 AZs)**: Providing redundancy and fault tolerance by distributing resources across different AZs.
+- **2 Public Subnets** :  
+- **2 Private Subnets**: Subnets isolated from the public internet, for sensitive data
+- **NAT Gateway**: A network gateway for egress traffic from private subnets to the internet.
+- **2 Route Tables**: Routing rules for traffic between subnets.
 ## Data
 
 ## Jenkins Pipeline
