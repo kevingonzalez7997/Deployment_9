@@ -45,6 +45,11 @@ For Docker Hub:
 - Navigate to **Manage Jenkins > Credentials > System > Global credentials (unrestricted)**.
 - Create credentials for access and secret keys using DockerHub-generated key and username.
 
+For Slack Webhook:
+
+- Navigate to **Manage Jenkins > Credentials > System > Global credentials (unrestricted)**.
+- Create credentials for access and choose the appropriate credential type "Secret text" for a simple secret to place the URL.
+
 ## Application Infrastructure Resources
 
 ### vpc.tf
