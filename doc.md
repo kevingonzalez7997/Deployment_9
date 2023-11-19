@@ -105,6 +105,41 @@ The Deployment stage consists of applying the YAML files on the `kubernetes` EC2
 
 </details>
 
+<details>
+<summary><strong>Issues</strong></summary>
+
+#### Problem1: Frontend test stage NodeJS defaulting to wrong version
+#### Solution1: Install and use NVM to control what version of Node runs 
+
+#### Problem2: Frontend test stage hanging 
+#### Solution2: use `nohup` to start
+
+#### Problem3: Frontend test stage taking 3+ minutes with `npm install`
+#### Solution3: Switch to `npm ci` which is used for speeding up CICD specifically
+
+#### Problem4: Frontend test stage using curl to get 200/300 response fails and returns 000
+#### Solution4: Write the output of `nohup npm start` command to a file and use `grep` to search for success Messages
+
+#### Problem5: Continuous building of Docker images taking up too much space on agents 
+#### Solution5: Remove all images at begining of pipeline runs except ones tagged with "latest"
+
+#### Problem6: Frontend test stage application directory already exists
+#### Problem6: Clean up directories and running processes at begining of pipeline run  
+
+#### Problem7: Images building from cache, not reflecting updates
+#### Solution7: Add --no-cache flag to `docker build` commands 
+
+#### Problem8: IP address changes when instance stops which breaks the curl command to test backend app  
+#### Solution8: Install AWS CLI on Docker agent and get IP dynamically 
+
+#### Problem9: ENV variable for IP not passing between seperate 'sh' blocks in BuildTestBackend stage
+#### Solution9: Use a single sh block to fun all 'sh' commands within the same context
+
+#### Problem10: Getting 404 when using  curl -f http://$IP:8000
+#### Solution10: Look at Django 404 page and curl a valid endpoint [curl -f http://$IP:8000/api/products/]
+
+</details>
+
 </details>
 
 
