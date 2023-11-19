@@ -65,6 +65,23 @@ The Jenkins node previously created will use Terraform to launch the application
 
 ## Jenkins Pipeline
 
+### Pipeline Steps
+
+### Test Stage (docker_node)
+In these stages, the front end and back end are tested on the `docker_node` EC2 instance. Any errors are identified and addressed during this phase.
+### Build Stage (docker_node)
+The build stage focuses on building the Docker images. The Dockerfiles are used to create a container image that encases the application and its dependencies. The images serve as a consistent package for the application's front and back end.
+
+### Login to Docker Hub (docker_node)
+After the images are built, they will get pushed by logging into Docker Hub. This is made possible through credentials installed on Jenkins, allowing for secure interactions with the Docker Hub service.
+
+### Push to Docker Hub (docker_node)
+Once the images are successfully created, they are pushed to the Docker Hub repository. This step makes the Docker image available for distribution and deployment.
+
+### Deploy
+
+The Deployment stage consists of `apply` to YAML files on the `kubernetes` EC2 instance. The front-end and back-end components have their own set of distinctive deployment and service YAML files. In the deployment.yaml file, container configuration details, such as the image and port, are specified. The service YAML file configures how users can access the application after entering through the ingress manifest.
+
 ## Troubleshooting
 
 ## Optimization
