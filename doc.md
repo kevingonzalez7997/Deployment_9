@@ -64,7 +64,6 @@ The Jenkins node previously created will use Terraform to launch the application
 - **NAT Gateway**: A network gateway for egress traffic from private subnets to the internet.
 - **2 Route Tables**: Routing rules for traffic between subnets, NAT, and IGW
 
-## Data
 
 ## Jenkins Pipeline
 
@@ -105,11 +104,12 @@ Once the images are successfully created, they are pushed to the Docker Hub repo
 The Deployment stage consists of applying the YAML files on the `kubernetes` EC2 instance. The front-end and back-end components have their own set of distinctive deployment and service YAML files. In the `deployment.yaml` file, container configuration details, such as the image and port, are specified. The service YAML file configures how users can access the application after entering through the ingress manifest.
 
 </details>
-
-
-
 </details>
 
+## Data
+
+## Monitoring
+To enhance the monitoring capabilities and maintain native integration within the AWS ecosystem, we've leveraged AWS CloudWatch. This service provides comprehensive insights into application performance, allowing us to proactively address issues and minimize disruptions.
 
 ## Troubleshooting
 
