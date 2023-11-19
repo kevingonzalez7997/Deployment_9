@@ -66,7 +66,7 @@ The Jenkins node previously created will use Terraform to launch the application
 
 
 ## Jenkins Pipeline
-
+![Pipeline](Results/CICD.jpg)
 <details>
 <summary><strong>Pipeline Steps</strong></summary>
 
