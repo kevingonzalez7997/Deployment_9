@@ -62,10 +62,8 @@ The Jenkins node previously created will use Terraform to launch the application
 - **Internet Gateway**: Entry point for traffic into the VPC
 - **NAT Gateway**: A network gateway for egress traffic from private subnets to the internet.
 - **2 Route Tables**: Routing rules for traffic between subnets, NAT, and IGW
-## Data
 
-<details>
-<summary><strong>Jenkins Pipeline</strong></summary>
+## Data
 
 ## Jenkins Pipeline
 
@@ -108,6 +106,7 @@ The Deployment stage consists of applying the YAML files on the `kubernetes` EC2
 </details>
 
 </details>
+
 
 ## Troubleshooting
 
