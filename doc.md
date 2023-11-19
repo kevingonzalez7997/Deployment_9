@@ -144,8 +144,10 @@ The Deployment stage consists of applying the YAML files on the `kubernetes` EC2
 
 #### Problem10: Getting 404 when using  curl -f http://$IP:8000
 ##### Solution10: Look at Django 404 page and curl a valid endpoint [curl -f http://$IP:8000/api/products/]
-
 </details>
+</details>
+
+
 ## Optimization
 **Geographical Redundancy**: Duplicating the entire infrastructure in a different AWS region would further increase resilience. This provides a failover in case a whole region experiences an outage, ensuring continued availability of the application.
 ## Conclusion
