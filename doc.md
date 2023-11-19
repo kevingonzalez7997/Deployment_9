@@ -21,6 +21,8 @@ The primary goal of this deployment is to leverage Kubernetes to deploy a robust
 
 This setup aims to establish a resilient and scalable infrastructure for the e-commerce application, optimizing performance and scalability during traffic spikes, and addressing disaster recovery scenarios.
 
+![Home](Results/deployed.png)
+
 ## Infrastructure Diagram
 ![Infrastructure Diagram](Results/Deploy9.png)
 
