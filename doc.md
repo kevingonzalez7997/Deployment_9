@@ -10,6 +10,7 @@
 - [Application Infrastructure Resources](#application-infrastructure-resources)
 - [Jenkins Pipeline](#jenkins-pipeline)
 - [Data](#data)
+- [Monitoring](#monitoring) 
 - [Troubleshooting](#troubleshooting)
 - [Optimization](#optimization)
 - [Conclusion](#conclusion)
