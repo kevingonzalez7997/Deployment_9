@@ -1,4 +1,4 @@
-# Ecom application deployment on AWS network with EKS
+# Ecom Application Deployment on AWS Network with EKS
 
 ### November 18, 2023
 
