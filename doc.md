@@ -112,6 +112,7 @@ The Deployment stage consists of applying the YAML files on the `kubernetes` EC2
 
 ## Monitoring
 To enhance the monitoring capabilities and maintain native integration within the AWS ecosystem, we've leveraged AWS CloudWatch. This service provides comprehensive insights into application performance, allowing us to proactively address issues and minimize disruptions.
+![Metrics](Results/CloudWatchMeteric.png)
 
 ## Troubleshooting
 
