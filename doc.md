@@ -59,6 +59,7 @@ The Jenkins node previously created will use Terraform to launch the application
 - **Availability Zones (2 AZs)**: Providing redundancy and fault tolerance by distributing resources across different AZs.
 - **2 Public Subnets**: Hosts the NAT gateway for egress traffic from the private subnet
 - **2 Private Subnets**: Subnets isolated from the public internet, for sensitive data
+- **Internet Gateway**: Entry point for traffic into the VPC
 - **NAT Gateway**: A network gateway for egress traffic from private subnets to the internet.
 - **2 Route Tables**: Routing rules for traffic between subnets, NAT, and IGW
 ## Data
