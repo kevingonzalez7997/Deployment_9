@@ -110,6 +110,50 @@ The Deployment stage consists of applying the YAML files on the `kubernetes` EC2
 
 ## Data
 
+#### Create a diagram of the schema and relationship between the tables (keys). [Schema Diagram](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/Schema.md)
+
+#### What is the distribution of the amount of products ORDERED?  How much revenue would each product have generated IF the order was completed? 
+
+<details>
+  <summary><strong>Distribution Data</strong></summary>
+
+  - [Distribution Visual](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/Visualization_1.pdf)
+  - [Distribuiton CSV](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/solution_1.csv)
+
+</details>
+
+#### Which states ordered the most products? Least products?  How does the revenue generated compare to the amount of products sold?  What were the top 5 products sold in each of those states? 
+
+<details>
+  <summary><strong>State and Product Data</strong></summary>
+  
+  - [State and Product Visual_A](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/Visualization_2A.pdf)
+  - [State and Product Visual_B](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/Visualization_2B.pdf)
+  - [State and Product CSV_A](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/solution_2A.csv)
+  - [State and Product CSV_B](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/solution_2B_Top5.csv)
+
+</details>
+
+#### There are orders that were placed that weren't paid for.  Those shouldn't have been shipped out.  How much money did this company lose by delivering products that were not paid for?  How does this compare to how much revenue would have been generated?  
+
+<details>
+  <summary><strong>Lost Revenue Data</strong></summary>
+
+  - [Lost Revenue Visual](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/Visualization_3.pdf)
+  - [Lost Reveune CSV](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/solution_3.csv)
+
+</details>
+
+#### Taking into consideration that some orders were not completed, how much money was ACTUALLY generated compared to the answer from Question 1?  
+
+<details>
+  <summary><strong>Money ACTUALLY generated Data</strong></summary>
+
+  - [Money ACTUALLY generated Visual](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/Visualization_4.pdf)
+  - [Money ACTUALLY generated CSV](https://github.com/andmulLABS01/Deployment_9/blob/main/Results/solution_04.csv)
+
+</details>
+
 ## Monitoring
 To enhance the monitoring capabilities and maintain native integration within the AWS ecosystem, we've leveraged AWS CloudWatch. This service provides comprehensive insights into application performance, allowing us to proactively address issues and minimize disruptions.
 ![Metrics](Results/CloudWatchMeteric.png)
