@@ -8,6 +8,14 @@ pipeline {
     stages {
         stage('TestFrontend') {
             steps {
+                //list docker layers that are taking up instance space and pass the list to the remove command
+                //remove a Deployment9 directory if it exists
+                //kill any process running on port 3000 which we need clear to test our frontend app
+                //clone the repo & move into the frontend directory
+                //npm ci vs npm install: faster, made for ci pipelines, skips checking for updates or version compatability
+                //start the frontend in the backgroud and keep it running to capture the output and write it to a file
+                //give the frontend 30 seconds to fully start
+                //search the output txt file for the success message
                 sh '''#!/bin/bash
                   docker images -f "dangling=true" -q | xargs docker rmi
                   rm -rf Deployment9
@@ -35,6 +43,13 @@ pipeline {
         stage('BuildTestBackend') {
             steps {
               dir('backend') {
+                //stop and remove any of our backend containers that may still be on our instance
+                //build the backend image 
+                //start the backend container
+                //dynamically grab the current ip address of our instance
+                //store it in a variable
+                //curl a backend api endpoint with the -f(failure) flag so the script stops when theres a 400/500 response and keeps going otherwise
+                //after a successful request, stop and remove the container
                 sh '''#!/bin/bash
                 docker stop be_test || true
                 docker rm be_test || true
