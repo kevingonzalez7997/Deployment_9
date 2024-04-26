@@ -2,7 +2,7 @@
 
 sudo apt-get update
 
-sudo apt install -y deafult-jre
+sudo apt install -y default-jre
 
 sudo apt update
 
