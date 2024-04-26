@@ -16,4 +16,4 @@ sudo mv /tmp/eksctl /usr/local/bin
 
 sudo apt update
 
-sudo apt install -y deafult-jre
+sudo apt install -y default-jre
